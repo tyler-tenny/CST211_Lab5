@@ -15,6 +15,10 @@ Roadmap* AutoGenerateItinerary() {
 	newMap->InsertCity(temp3);
 	City* temp4 = new City("Ashland", 97200, 35000, 4.3);
 	newMap->InsertCity(temp4);
+  delete temp1;
+  delete temp2;
+  delete temp3;
+  delete temp4;
 	return newMap;
 }
 
@@ -81,6 +85,7 @@ int main() {
 		}
 		case 7: {
 			std::cout << "Goodbye!\n";
+      delete itinerary;
 			return 0;
 		}
 		}
